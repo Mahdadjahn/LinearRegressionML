@@ -20,6 +20,7 @@ test_y = numpy.asanyarray(test[["price"]])
 regr.fit(train_x,train_y)
 
 preforr2score = regr.predict(test_x)
+print("r2-score: ")
 print(r2_score(test_y,preforr2score))
 
 print(regr.predict([[220]])[0][0])
